@@ -9,10 +9,57 @@ To write a program to predict the price of cars using a multiple linear regressi
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+Step 1: Start the program.
+
+Step 2: Import required libraries:
+
+pandas, numpy for data handling
+sklearn modules for model building, evaluation, and cross-validation
+matplotlib for visualization
+
+Step 3: Load the dataset (caras.csv) using pandas.read_csv().
+
+Step 4: Display the first few rows using head() to understand the dataset.
+
+Step 5: Perform data preprocessing:
+
+Drop unnecessary columns (car_ID, CarName)
+Convert categorical variables into numerical format using pd.get_dummies()
+
+Step 6: Separate features and target variable:
+
+Independent variables (X): all columns except price
+Dependent variable (y): price
+
+Step 7: Split the dataset into training and testing sets using train_test_split() (80% training, 20% testing).
+
+Step 8: Create a Multiple Linear Regression model using LinearRegression().
+
+Step 9: Train the model using the training dataset (fit() method).
+
+Step 10: Perform Cross-Validation:
+
+Use cross_val_score() with 5 folds
+Compute R² score for each fold
+Calculate the average R² score
+
+Step 11: Predict values on the test dataset using the trained model.
+
+Step 12: Evaluate model performance using:
+
+Mean Squared Error (MSE)
+R² Score
+
+Step 13: Display Name and Register Number along with results.
+
+Step 14: Visualize results:
+
+Plot Actual vs Predicted prices using a scatter plot
+Draw a reference line representing perfect prediction
+
+Step 15: Interpret the results based on evaluation metrics and cross-validation scores.
+
+Step 16: Stop the program.
 
 ## Program:
 ```
